@@ -84,7 +84,7 @@ body::after{
     font-size: 1em;
     font-weight: 300;
 }
-.container .card .content a{
+.container .card .content .carda{
     position: relative;
     display: inline-block;
     color: #000;
@@ -95,4 +95,7 @@ body::after{
     background-color: #fff ;
     padding: 8px 20px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+.container .card .content a{
+    padding: 1vh;
 }
