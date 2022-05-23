@@ -5,27 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Writiger's Projects</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="music.css">
+    <link rel="shortcut icon" href="https://cos.writiger.cn/personal_Info/heads/Head16x.ico">
+    <script src="jquery-3.6.0.js"></script>
 </head>
  
 <body>
 
     <div class="page-content">
-        <div class="music">
-            <div class="music-image rotating">
+        <div class="musicCard">
+            <audio id="music" src="src/喜劇.mp3"></audio>
+
+            <div class="musicCard-image pause" id="audioImg">
                 <img src="https://p2.music.126.net/_sGZwt82duHeC0et8lsF0w==/109951167257363569.jpg?param=130y130" />
             </div>
-            <h2 class="music-username">Elena Zoldado</h2>
-            <small class="music-user-handle">@elena_zoldado</small>
-            <div class="music-actions">
-                <button class="btn btn--primary">Link</button>
-                <button class="btn btn--icon">
-                    <i class="ph-export"></i>
+            <h2 class="musicCard-username">喜劇</h2>
+            <small class="musicCard-user-handle">星野源</small>
+            <div class="musicCard-actions">
+                <button class="btnM btn--primary" id="start">START</button>
+                <button class="btnM btn--icon" onclick="voiceUp()">
+                    <img src="src/up.svg" alt="">
                 </button>
-                <button class="btn btn--icon">
-                    <i class="ph-dots-three-outline-fill">?</i>
+                <button class="btnM btn--icon" onclick="voiceDown()">
+                    <img src="src/down.svg" alt="">
                 </button>
             </div>
         </div>
@@ -52,5 +56,5 @@
         </div>
     </div>
 </body>
-
+<script src="index.js"></script>
 </html>

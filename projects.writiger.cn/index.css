@@ -56,7 +56,7 @@ body {
   .card {
     height: 350px;
   }
-  .music{
+  .musicCard{
     height: 355px;
   }
 }
@@ -139,9 +139,11 @@ body {
   background-color: black;
   border: none;
 }
+
 .btn:hover {
   background-color: #0d0d0d;
 }
+
 .btn:focus {
   outline: 1px dashed yellow;
   outline-offset: 3px;

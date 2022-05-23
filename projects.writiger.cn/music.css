@@ -1,4 +1,4 @@
-.music {
+.musicCard {
     position: relative;
     display: flex;
     align-items: center;
@@ -13,7 +13,7 @@
     background-image: linear-gradient(135deg, rgba(117, 46, 124, 0.35), rgba(115, 74, 88, 0.1) 15%, #1b2028 20%, #1b2028 100%);
 }
 
-.music:after {
+.musicCard:after {
     content: "";
     display: block;
     top: -3px;
@@ -26,7 +26,7 @@
     background-image: linear-gradient(135deg, #752e7c, #734a58 20%, #1b2028 30%, #2c333e 100%);
 }
 
-.music-image {
+.musicCard-image {
     border-radius: 50%;
     overflow: hidden;
     width: 79%;
@@ -34,7 +34,7 @@
     position: relative;
 }
 
-.music-image img {
+.musicCard-image img {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -63,29 +63,44 @@
     -o-animation: rotation 20s linear infinite;
 
 }
+.pause{
 
-.music-username {
+    -webkit-transform: rotate(360deg);
+
+    animation: rotation 20s linear infinite;
+
+    -moz-animation: rotation 20s linear infinite;
+
+    -webkit-animation: rotation 20s linear infinite;
+
+    -o-animation: rotation 20s linear infinite;
+
+    animation-play-state: paused;
+
+}
+
+.musicCard-username {
     font-size: 1.5rem;
     font-weight: 600;
     margin-top: 1.5rem;
 }
 
-.music-user-handle {
+.musicCard-user-handle {
     color: #7d8396;
 }
 
-.music-actions {
+.musicCard-actions {
     margin-top: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.music-actions>* {
+.musicCard-actions>* {
     margin: 0 0.25rem;
 }
 
-.btn {
+.btnM {
     border: 0;
     background-color: transparent;
     padding: 0;
@@ -119,8 +134,10 @@
     color: #7d8396;
 }
 
-.btn--icon i {
+
+.btn--icon img {
     font-size: 1.25em;
+    height: 55%;
 }
 
 .btn--icon:hover,
