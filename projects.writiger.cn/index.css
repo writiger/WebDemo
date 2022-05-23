@@ -40,7 +40,7 @@ body {
 }
 
 .card {
-  animation:fadenum 3s 1;
+  animation:fadenum 4s 1;
   position: relative;
   display: flex;
   align-items: flex-end;
