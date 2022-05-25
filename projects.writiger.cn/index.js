@@ -38,3 +38,6 @@ function voiceDown(){
     if(music.volume > 0.1)
         music.volume -= 0.1
 }
+function goP(where){
+    window.location.href="http://"+where+".writiger.cn"
+}
