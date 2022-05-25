@@ -18,7 +18,7 @@ body::before{
     width: 100%;
     height: 100%;
     background:linear-gradient(#f00,#f0f);
-    clip-path: circle(30% at right 70%);
+    clip-path: circle(30% at right 70%);    
 }
 body::after{
     content: '';
@@ -40,6 +40,9 @@ body::after{
     z-index:1;
 }
 .container .card{
+    background-image: url(https://cos.writiger.cn/web/www/wenhao.svg);
+    background-repeat: no-repeat;
+    background-position: center;
     position: relative;
     width: 280px;
     height: 400px;
@@ -54,18 +57,27 @@ body::after{
     border-top:rgba(255,255,255,0.5) 1px solid;  
     border-left:rgba(255,255,255,0.5) 1px solid;
     backdrop-filter: blur(5px);
+    opacity: 0.8;
 }
-.container .card .content{
+.container .card .content{  
     padding: 20px;
     text-align: center;
-    transition: 0.5s;
+    transition: 0.3s;
     transform: translateY(100px);
     opacity: 0;
 }
+.container .card:hover{
+    background-image: url(https://cos.writiger.cn/web/www/wenhao2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
 .container .card:hover .content{
     transform: translateY(0px);
     opacity: 1;
-}
+}   
 .container .card .content h2{
     position: absolute;
     top: -80px;
