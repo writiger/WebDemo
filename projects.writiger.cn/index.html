@@ -10,34 +10,37 @@
     <link rel="stylesheet" href="music.css">
     <link rel="shortcut icon" href="https://cos.writiger.cn/personal_Info/heads/Head16x.ico">
     <script src="jquery-3.6.0.js"></script>
-</head> 
- 
+</head>
+
 <body>
 
     <div class="page-content">
         <div class="musicContainer">
-        <div class="musicCard">
-            <audio id="music" src="src/喜劇.mp3"></audio>
+            <div class="musicCard">
+                <audio id="music" src="src/LifeWillChange.mp3"></audio>
 
-            <div class="musicCard-image pause" id="audioImg">
-                <img src="https://p2.music.126.net/_sGZwt82duHeC0et8lsF0w==/109951167257363569.jpg?param=130y130" />
+                <div class="musicCard-image pause" id="audioImg">
+                    <img src="src/LifeWillChange.jpg" />
+                </div>
+                <h2 class="musicCard-username">LifeWillChange</h2>
+                <small class="musicCard-user-handle">Lyn</small>
+                <div class="musicCard-actions">
+                    <button class="btnM btn--primary" id="start">START</button>
+                    <button class="btnM btn--icon" onclick="voiceUp()">
+                        <img src="src/up.svg" alt="">
+                    </button>
+                    <button class="btnM btn--icon" onclick="voiceDown()">
+                        <img src="src/down.svg" alt="">
+                    </button>
+                </div>
             </div>
-            <h2 class="musicCard-username">喜劇</h2>
-            <small class="musicCard-user-handle">星野源</small>
-            <div class="musicCard-actions">
-                <button class="btnM btn--primary" id="start">START</button>
-                <button class="btnM btn--icon" onclick="voiceUp()">
-                    <img src="src/up.svg" alt="">
-                </button>
-                <button class="btnM btn--icon" onclick="voiceDown()">
-                    <img src="src/down.svg" alt="">
-                </button>
-            </div>
-        </div></div>
+        </div>
         <div class="card">
             <div class="content">
                 <h2 class="title">60% Board Test</h2>
-                <p class="copy">A Project from CodePen named "Minimal keyboard" by <a href="https://codepen.io/Alca/pens/popular" style="text-decoration:none;">Dibyajyoti Mishra</a> </p>
+                <p class="copy">A Project from CodePen named "Minimal keyboard" by <a
+                        href="https://codepen.io/Alca/pens/popular" style="text-decoration:none;">Dibyajyoti Mishra</a>
+                </p>
                 <button class="btn" onclick="goP('keyboard')">Go Test</button>
             </div>
         </div>
@@ -58,4 +61,5 @@
     </div>
 </body>
 <script src="index.js"></script>
+
 </html>
